@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A3020872A6C5C9D000678A4 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3020862A6C5C9D000678A4 /* InputView.swift */; };
+		9A3020892A6C6E7B000678A4 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3020882A6C6E7B000678A4 /* SecureTextField.swift */; };
 		9A4341C42A658B3D00F82E83 /* DeepFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4341C32A658B3D00F82E83 /* DeepFitApp.swift */; };
-		9A4341C62A658B3D00F82E83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4341C52A658B3D00F82E83 /* ContentView.swift */; };
+		9A4341C62A658B3D00F82E83 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4341C52A658B3D00F82E83 /* RegisterView.swift */; };
 		9A4341C82A658B3F00F82E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4341C72A658B3F00F82E83 /* Assets.xcassets */; };
 		9A4341CB2A658B3F00F82E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4341CA2A658B3F00F82E83 /* Preview Assets.xcassets */; };
 		9A4341D52A658B3F00F82E83 /* DeepFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4341D42A658B3F00F82E83 /* DeepFitTests.swift */; };
 		9A4341DF2A658B3F00F82E83 /* DeepFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4341DE2A658B3F00F82E83 /* DeepFitUITests.swift */; };
 		9A4341E12A658B3F00F82E83 /* DeepFitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4341E02A658B3F00F82E83 /* DeepFitUITestsLaunchTests.swift */; };
+		9A616DCA2A69C97800B63214 /* Gilroy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A616DC92A69C97800B63214 /* Gilroy.ttf */; };
+		9A616DCC2A69D54200B63214 /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A616DCB2A69D54200B63214 /* ToggleView.swift */; };
+		9A806AB22A65B52200AEE0AE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A806AB12A65B52200AEE0AE /* APIService.swift */; };
+		9A806AB42A65B56B00AEE0AE /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A806AB32A65B56B00AEE0AE /* RegisterViewModel.swift */; };
+		9AA1ECE22A667DDC004685F9 /* Facon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AA1ECE12A667DDC004685F9 /* Facon.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A3020862A6C5C9D000678A4 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		9A3020882A6C6E7B000678A4 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		9A4341C02A658B3D00F82E83 /* DeepFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4341C32A658B3D00F82E83 /* DeepFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepFitApp.swift; sourceTree = "<group>"; };
-		9A4341C52A658B3D00F82E83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A4341C52A658B3D00F82E83 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		9A4341C72A658B3F00F82E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A4341CA2A658B3F00F82E83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A4341D02A658B3F00F82E83 /* DeepFitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +53,11 @@
 		9A4341DA2A658B3F00F82E83 /* DeepFitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepFitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4341DE2A658B3F00F82E83 /* DeepFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepFitUITests.swift; sourceTree = "<group>"; };
 		9A4341E02A658B3F00F82E83 /* DeepFitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepFitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9A616DC92A69C97800B63214 /* Gilroy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gilroy.ttf; sourceTree = "<group>"; };
+		9A616DCB2A69D54200B63214 /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
+		9A806AB12A65B52200AEE0AE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		9A806AB32A65B56B00AEE0AE /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		9AA1ECE12A667DDC004685F9 /* Facon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Facon.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				9A4341C32A658B3D00F82E83 /* DeepFitApp.swift */,
-				9A4341C52A658B3D00F82E83 /* ContentView.swift */,
-				9A4341C72A658B3F00F82E83 /* Assets.xcassets */,
+				9A616DC72A69C75A00B63214 /* Components */,
+				9A806AE42A65D4F200AEE0AE /* Extensions */,
+				9A806AB72A65C82B00AEE0AE /* Assets */,
+				9A806AB02A65B49F00AEE0AE /* Services */,
+				9A806AAC2A65B43800AEE0AE /* Screens */,
+				9A806AAB2A65B43200AEE0AE /* Models */,
 				9A4341C92A658B3F00F82E83 /* Preview Content */,
 			);
 			path = DeepFit;
@@ -125,6 +143,73 @@
 				9A4341E02A658B3F00F82E83 /* DeepFitUITestsLaunchTests.swift */,
 			);
 			path = DeepFitUITests;
+			sourceTree = "<group>";
+		};
+		9A616DC72A69C75A00B63214 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9A616DCB2A69D54200B63214 /* ToggleView.swift */,
+				9A3020862A6C5C9D000678A4 /* InputView.swift */,
+				9A3020882A6C6E7B000678A4 /* SecureTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9A616DC82A69C79C00B63214 /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				9A806AB32A65B56B00AEE0AE /* RegisterViewModel.swift */,
+				9A4341C52A658B3D00F82E83 /* RegisterView.swift */,
+			);
+			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		9A806AAB2A65B43200AEE0AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A806AAC2A65B43800AEE0AE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9A616DC82A69C79C00B63214 /* RegisterView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9A806AB02A65B49F00AEE0AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9A806AB12A65B52200AEE0AE /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9A806AB72A65C82B00AEE0AE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9A806AB82A65C84800AEE0AE /* CustomFonts */,
+				9A4341C72A658B3F00F82E83 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9A806AB82A65C84800AEE0AE /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				9A616DC92A69C97800B63214 /* Gilroy.ttf */,
+				9AA1ECE12A667DDC004685F9 /* Facon.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		9A806AE42A65D4F200AEE0AE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4341CB2A658B3F00F82E83 /* Preview Assets.xcassets in Resources */,
+				9AA1ECE22A667DDC004685F9 /* Facon.ttf in Resources */,
 				9A4341C82A658B3F00F82E83 /* Assets.xcassets in Resources */,
+				9A616DCA2A69C97800B63214 /* Gilroy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +344,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4341C62A658B3D00F82E83 /* ContentView.swift in Sources */,
+				9A806AB42A65B56B00AEE0AE /* RegisterViewModel.swift in Sources */,
+				9A4341C62A658B3D00F82E83 /* RegisterView.swift in Sources */,
+				9A806AB22A65B52200AEE0AE /* APIService.swift in Sources */,
+				9A3020872A6C5C9D000678A4 /* InputView.swift in Sources */,
+				9A3020892A6C6E7B000678A4 /* SecureTextField.swift in Sources */,
+				9A616DCC2A69D54200B63214 /* ToggleView.swift in Sources */,
 				9A4341C42A658B3D00F82E83 /* DeepFitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +512,7 @@
 				DEVELOPMENT_TEAM = Y5YT7CJS35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepFit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +542,7 @@
 				DEVELOPMENT_TEAM = Y5YT7CJS35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeepFit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
