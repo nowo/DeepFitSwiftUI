@@ -16,25 +16,38 @@ struct SecureTextFieldStyle: TextFieldStyle {
             .multilineTextAlignment(.leading)
             .padding()
             .autocapitalization(.none)
-            .background(RoundedRectangle(cornerRadius: 10)
-                .inset(by: 1) // Preventing clipping of the border
-                .stroke(.gray, lineWidth: 1))
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .inset(by: 1)
+                    .stroke(Color(red: 0.96, green: 0.96, blue: 0.98), lineWidth: 2)
+            )
     }
 }
 
 struct SecureTextField: View {
     @State private var showPassword = false
-
+    let hint: String
     let label: String
     @Binding var text: String
 
     var body: some View {
-        if showPassword {
-            TextField(label, text: $text)
-                .textFieldStyle(SecureTextFieldStyle(showPassword: $showPassword))
-        } else {
-            SecureField(label, text: $text)
-                .textFieldStyle(SecureTextFieldStyle(showPassword: $showPassword))
+            
+        VStack(alignment: .leading){
+            Text(label)
+                .font(
+                    Font.custom("Inter", size: 18)
+                        .weight(.medium)
+                )
+                .foregroundColor(Color(red: 0.52, green: 0.54, blue: 0.56))
+            
+            if showPassword {
+                TextField(hint, text: $text)
+                    .textFieldStyle(SecureTextFieldStyle(showPassword: $showPassword))
+                    
+            } else {
+                SecureField(hint, text: $text)
+                    .textFieldStyle(SecureTextFieldStyle(showPassword: $showPassword))
+            }
         }
     }
 }

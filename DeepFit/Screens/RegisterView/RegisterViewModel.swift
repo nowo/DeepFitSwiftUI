@@ -8,8 +8,20 @@
 import Foundation
 
 class RegisterViewModel: ObservableObject {
+    
+    @Published var name: String = ""
+    @Published var nickName: String = ""
+    @Published var email: String = ""
+    @Published var password: String = ""
+    @Published var nameErrorText: String = ""
+    @Published var emailErrorText: String = ""
+    @Published var checkAgreement = false
+    @Published var showPassword: Bool = true
+    @Published var showEmailError: Bool = false
+    
+    
     @Published var username: String = "erdal"
-    private let httpService: HTTPService
+     let httpService: HTTPService
     
     init(httpService: HTTPService = HTTPService()) {
         self.httpService = httpService
@@ -37,6 +49,7 @@ class RegisterViewModel: ObservableObject {
     
     func RegisterWithEmail(email: String) {
         username = "burak"
+        showEmailError.toggle()
         print(email)
     }
 }

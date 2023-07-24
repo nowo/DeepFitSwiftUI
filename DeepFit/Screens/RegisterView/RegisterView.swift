@@ -8,21 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject private var viewModel = RegisterViewModel()
-    @State private var name: String = ""
-    @State private var nickName: String = ""
-    @State private var email: String = ""
-    @State private var password: String = ""
-    
-    
-    @State var nameErrorText: String = ""
-    @State var emailErrorText: String = ""
-    
-    
-    @State private var checkAgreement = false
-    @State var showPassword: Bool = false
-    @State var showEmailError: Bool = false
-    
+    @StateObject private var viewModel = RegisterViewModel()
+
     var body: some View {
         VStack (alignment: .leading){
                 signUpTitle
@@ -61,15 +48,15 @@ struct ContentView: View {
     }
     
     var nameField: some View {
-        InputView(textValue: $name, errorText: $nameErrorText, hint: "erdal cinar")
+        InputView(textValue: $viewModel.name, errorText: $viewModel.nameErrorText, hint: "erdal cinar", textFieldTitle: "İsim Soyisim")
     }
     
     var nickNameField: some View {
-        InputView(textValue: $nickName, errorText: $nickName, hint: "Email Adresi giriniz", textFieldTitle: "Kullanici Adi Giriniz")
+        InputView(textValue: $viewModel.nickName, errorText: $viewModel.nickName, hint: "Email Adresi giriniz", textFieldTitle: "Kullanici Adi Giriniz")
     }
     
     var emailField: some View {
-        InputView(textValue: $email, errorText: $emailErrorText, leftIcon: Image(systemName: "at"), hint: "Email Adresi giriniz", textFieldTitle: "Email Adresi Giriniz")
+        InputView(textValue: $viewModel.email, errorText: $viewModel.emailErrorText, leftIcon: Image(systemName: "at"), hint: "Email Adresi giriniz", textFieldTitle: "Email Adresi Giriniz")
     }
     
     var passwordField: some View {
@@ -114,14 +101,14 @@ struct ContentView: View {
 //
 //
 //           }
-        SecureTextField(label: password, text: $password)
+        SecureTextField(hint: "Şifreni gir!", label: "Password", text: $viewModel.password)
             .textContentType(.newPassword)
         }
     
     
     var agreement: some View {
         VStack{
-            Toggle(isOn: $checkAgreement) {
+            Toggle(isOn: $viewModel.checkAgreement) {
                 Text("KVKK vb. sözleşmeleri kabul ederim.")
                   .font(
                     Font.custom("Gilroy", size: 20)
@@ -138,8 +125,7 @@ struct ContentView: View {
     var createButton: some View {
         VStack{
             Button {
-                viewModel.RegisterWithEmail(email: email)
-                showEmailError.toggle()
+                viewModel.RegisterWithEmail(email: viewModel.email)
             } label: {
                 ZStack{
                     Rectangle()
